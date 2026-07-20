@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Anvar Rahimov | Senior Frontend Dasturchi & UI/UX Dizayner</title>
+  <meta name="description" content="Anvar Rahimov - 5 yildan ortiq tajribaga ega bo'lgan Senior Frontend Dasturchi va UI/UX dizayner. Zamonaviy, tezkor va mukammal veb-saytlar yaratish.">
+  <meta name="keywords" content="Frontend dasturchi, portfolio, uzbek developer, React, Next.js, HTML, CSS, JavaScript, veb-dasturlash, UI/UX dizayn, Anvar Rahimov">
+  <meta name="author" content="Anvar Rahimov">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anvarrahimov.uz/">
+  <meta property="og:title" content="Anvar Rahimov | Senior Frontend Dasturchi & UI/UX Dizayner">
+  <meta property="og:description" content="Anvar Rahimovning shaxsiy portfoliosi. Zamonaviy veb-saytlar va foydalanuvchilarga qulay interfeyslarni ishlab chiqish.">
+  <meta property="og:image" content="https://placehold.co/1200x630/1e1e1f/ffdb70?text=Anvar+Rahimov+Portfolio">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://anvarrahimov.uz/">
+  <meta property="twitter:title" content="Anvar Rahimov | Senior Frontend Dasturchi & UI/UX Dizayner">
+  <meta property="twitter:description" content="Anvar Rahimovning shaxsiy portfoliosi. Zamonaviy veb-saytlar va foydalanuvchilarga qulay interfeyslarni ishlab chiqish.">
+  <meta property="twitter:image" content="https://placehold.co/1200x630/1e1e1f/ffdb70?text=Anvar+Rahimov+Portfolio">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://placehold.co/32x32/1e1e1f/ffdb70?text=AR" type="image/x-icon">
+
+  <!-- Google Fonts - Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- DYNAMIC BACKGROUND -->
+  <div class="bg-dynamic-blur" id="dynamic-bg" aria-hidden="true"></div>
+
+  <!-- 1. PRELOADER -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__logo">AR</div>
+    <div class="preloader__spinner"></div>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <div class="app-container">
+
+    <!-- 2. SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      
+      <!-- Sidebar Header -->
+      <div class="sidebar__info">
+        <figure class="sidebar__avatar">
+          <div class="sidebar__avatar-placeholder">AR</div>
+        </figure>
+
+        <div class="sidebar__info-content">
+          <h1 class="sidebar__name" title="Anvar Rahimov">Anvar Rahimov</h1>
+          <p class="sidebar__title">Senior Frontend Dasturchi</p>
+        </div>
+
+        <button class="sidebar__toggle-btn" aria-expanded="false" aria-controls="sidebar-contacts" data-sidebar-btn>
+          <span>Kontaktlarni ko'rsatish</span>
+          <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Sidebar Contacts List -->
+      <div class="sidebar__contacts" id="sidebar-contacts" data-sidebar-contacts>
+        <div class="separator"></div>
+
+        <ul class="sidebar__contacts-list">
+          <li class="sidebar__contact-item">
+            <div class="sidebar__icon-box" aria-hidden="true">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="sidebar__contact-info">
+              <p class="sidebar__contact-title">Email</p>
+              <a href="mailto:anvar.rahimov@example.com" class="sidebar__contact-link">anvar.rahimov@example.com</a>
+            </div>
+          </li>
+
+          <li class="sidebar__contact-item">
+            <div class="sidebar__icon-box" aria-hidden="true">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="sidebar__contact-info">
+              <p class="sidebar__contact-title">Telefon</p>
+              <a href="tel:+998901234567" class="sidebar__contact-link">+998 (90) 123-45-67</a>
+            </div>
+          </li>
+
+          <li class="sidebar__contact-item">
+            <div class="sidebar__icon-box" aria-hidden="true">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="sidebar__contact-info">
+              <p class="sidebar__contact-title">Tug'ilgan kun</p>
+              <time datetime="1995-05-15" class="sidebar__contact-text">15-May, 1995-yil</time>
+            </div>
+          </li>
+
+          <li class="sidebar__contact-item">
+            <div class="sidebar__icon-box" aria-hidden="true">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="sidebar__contact-info">
+              <p class="sidebar__contact-title">Manzil</p>
+              <address class="sidebar__contact-text">Toshkent, O'zbekiston</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- Social Links -->
+        <ul class="sidebar__social-list">
+          <li class="sidebar__social-item">
+            <a href="https://t.me/example_username" class="sidebar__social-link" target="_blank" rel="noopener" aria-label="Telegram profili">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="sidebar__social-item">
+            <a href="https://github.com/example_username" class="sidebar__social-link" target="_blank" rel="noopener" aria-label="GitHub profili">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="sidebar__social-item">
+            <a href="https://linkedin.com/in/example_username" class="sidebar__social-link" target="_blank" rel="noopener" aria-label="LinkedIn profili">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+    <!-- 3. MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- Navigation Menu -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <button class="navbar__link active" data-nav-btn="about">Men haqimda</button>
+          </li>
+          <li class="navbar__item">
+            <button class="navbar__link" data-nav-btn="resume">Rezyume</button>
+          </li>
+          <li class="navbar__item">
+            <button class="navbar__link" data-nav-btn="portfolio">Portfolio</button>
+          </li>
+          <li class="navbar__item">
+            <button class="navbar__link" data-nav-btn="blog">Blog</button>
+          </li>
+          <li class="navbar__item">
+            <button class="navbar__link" data-nav-btn="contact">Aloqa</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- SECTIONS -->
+
+      <!-- A) MEN HAQIMDA -->
+      <article class="content-section active" id="about" data-page="about">
+        <header class="content-header">
+          <h2 class="content-title">Men haqimda</h2>
+          <div class="content-header__line" aria-hidden="true"></div>
+        </header>
+
+        <section class="about__text">
+          <p>
+            Men 5 yildan ortiq tajribaga ega bo'lgan Senior Frontend Dasturchiman. Hozirgi kunda zamonaviy, tezkor va foydalanuvchilar uchun qulay bo'lgan veb-saytlar va veb-ilovalarni yaratish bilan shug'ullanaman. Doimo kod sifatini va mukammal dizayn integratsiyasini birinchi o'ringa qo'yaman.
+          </p>
+          <p>
+            Mening maqsadim — biznes muammolarini texnologik va chiroyli yechimlar yordamida hal qilish. Ish jarayonida clean code (toza kod) yozish qoidalariga rioya qilaman, veb-saytlar tezligi (performance) va SEO talablariga alohida e'tibor qarataman. Har doim yangi texnologiyalarni o'rganish va jamoa bilan tajriba ulashishga tayyorman.
+          </p>
+        </section>
+
+        <!-- Services (Nima bilan shug'ullanaman) -->
+        <section class="services">
+          <h3 class="section-title">Nima bilan shug'ullanaman</h3>
+          
+          <ul class="services__list">
+            <li class="services__item scroll-reveal">
+              <div class="services__icon-box" aria-hidden="true">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </div>
+              <div class="services__content">
+                <h4 class="services__item-title">Veb-dasturlash</h4>
+                <p class="services__item-text">Modern dizayn va ilg'or funksionallikka ega bo'lgan korporativ veb-saytlar va Landing Page-lar yaratish.</p>
+              </div>
+            </li>
+
+            <li class="services__item scroll-reveal">
+              <div class="services__icon-box" aria-hidden="true">
+                <ion-icon name="color-palette-outline"></ion-icon>
+              </div>
+              <div class="services__content">
+                <h4 class="services__item-title">UI/UX Dizayn</h4>
+                <p class="services__item-text">Figma yordamida har bir pikseliga e'tibor berilgan, foydalanuvchilar uchun qulay va chiroyli dizayn prototiplari.</p>
+              </div>
+            </li>
+
+            <li class="services__item scroll-reveal">
+              <div class="services__icon-box" aria-hidden="true">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="services__content">
+                <h4 class="services__item-title">Mobil Ilovalar</h4>
+                <p class="services__item-text">PWA va gibrid mobil ilovalar yordamida brendingizni smartfonlar ekraniga olib chiqish.</p>
+              </div>
+            </li>
+
+            <li class="services__item scroll-reveal">
+              <div class="services__icon-box" aria-hidden="true">
+                <ion-icon name="trending-up-outline"></ion-icon>
+              </div>
+              <div class="services__content">
+                <h4 class="services__item-title">SEO & Optimallashtirish</h4>
+                <p class="services__item-text">Veb-saytingiz yuklanish tezligini oshirish va qidiruv tizimlarida (Google, Yandex) yuqori o'rinlarga ko'tarish.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Testimonials (Fikrlar) -->
+        <section class="testimonials">
+          <h3 class="section-title">Fikrlar</h3>
+
+          <ul class="testimonials__list">
+            <li class="testimonials__item scroll-reveal" data-testimonial-idx="0">
+              <div class="testimonials__avatar-box" aria-hidden="true">
+                <div class="testimonials__avatar-placeholder">SQ</div>
+              </div>
+              <h4 class="testimonials__item-name">Sardorbek Qodirov</h4>
+              <p class="testimonials__item-company">CEO, "SmartTech"</p>
+              <p class="testimonials__item-text">
+                "Anvar bilan ishlash juda oson bo'ldi. U bizning barcha talablarimizni hisobga oldi va kutilganidan ham ajoyib veb-dastur tayyorlab berdi. Ish sifatiga gap bo'lishi mumkin emas!"
+              </p>
+            </li>
+
+            <li class="testimonials__item scroll-reveal" data-testimonial-idx="1">
+              <div class="testimonials__avatar-box" aria-hidden="true">
+                <div class="testimonials__avatar-placeholder">DU</div>
+              </div>
+              <h4 class="testimonials__item-name">Dilnoza Umarova</h4>
+              <p class="testimonials__item-company">Product Manager, "Apex Group"</p>
+              <p class="testimonials__item-text">
+                "Loyiha belgilangan muddatdan avval topshirildi. Ayniqsa saytning mobil versiyasi va interfeys animatsiyalari juda chiroyli va tez ishlamoqda. Tavsiya qilaman!"
+              </p>
+            </li>
+
+            <li class="testimonials__item scroll-reveal" data-testimonial-idx="2">
+              <div class="testimonials__avatar-box" aria-hidden="true">
+                <div class="testimonials__avatar-placeholder">JJ</div>
+              </div>
+              <h4 class="testimonials__item-name">Jasur Jo'rayev</h4>
+              <p class="testimonials__item-company">Asoschisi, "Udevs"</p>
+              <p class="testimonials__item-text">
+                "Frontend bo'yicha haqiqiy professional. Kod juda toza yozilgan, keyinchalik kengaytirish juda oson bo'ladi. SEO optimallashtirish tufayli mijozlarimiz soni sezilarli darajada oshdi."
+              </p>
+            </li>
+
+            <li class="testimonials__item scroll-reveal" data-testimonial-idx="3">
+              <div class="testimonials__avatar-box" aria-hidden="true">
+                <div class="testimonials__avatar-placeholder">MA</div>
+              </div>
+              <h4 class="testimonials__item-name">Malika Aliyeva</h4>
+              <p class="testimonials__item-company">Marketolog, "Lola Brand"</p>
+              <p class="testimonials__item-text">
+                "Bizning brend uchun ajoyib landing sahifasi tayyorlab berildi. Dizayn ruhi vCard-dan olinib, bizning talablarga moslashtirildi. Anvarga katta rahmat!"
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Testimonial Modal -->
+        <div class="modal" id="testimonial-modal" aria-hidden="true">
+          <div class="modal__overlay" data-modal-overlay></div>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-user-name">
+            <button class="modal__close-btn" aria-label="Yopish" data-modal-close>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal__content">
+              <div class="modal__avatar-box">
+                <div class="modal__avatar-placeholder" id="modal-user-initials">SQ</div>
+              </div>
+              <div class="modal__info">
+                <h4 class="modal__user-name" id="modal-user-name">Sardorbek Qodirov</h4>
+                <p class="modal__user-company" id="modal-user-company">CEO, "SmartTech"</p>
+              </div>
+              <p class="modal__text" id="modal-user-text">
+                "..."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partners (Hamkorlar/Texnologiyalar) -->
+        <section class="partners">
+          <h3 class="section-title">Texnologiyalar</h3>
+          <ul class="partners__list">
+            <li class="partners__item" title="HTML5">
+              <div class="partners__logo-placeholder"><ion-icon name="logo-html5"></ion-icon><span>HTML5</span></div>
+            </li>
+            <li class="partners__item" title="CSS3">
+              <div class="partners__logo-placeholder"><ion-icon name="logo-css3"></ion-icon><span>CSS3</span></div>
+            </li>
+            <li class="partners__item" title="JavaScript">
+              <div class="partners__logo-placeholder"><ion-icon name="logo-javascript"></ion-icon><span>ES6+</span></div>
+            </li>
+            <li class="partners__item" title="React.js">
+              <div class="partners__logo-placeholder"><ion-icon name="logo-react"></ion-icon><span>React</span></div>
+            </li>
+            <li class="partners__item" title="Next.js">
+              <div class="partners__logo-placeholder"><ion-icon name="globe-outline"></ion-icon><span>Next.js</span></div>
+            </li>
+            <li class="partners__item" title="Figma">
+              <div class="partners__logo-placeholder"><ion-icon name="logo-figma"></ion-icon><span>Figma</span></div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
+      <!-- B) REZYUME -->
+      <article class="content-section" id="resume" data-page="resume">
+        <header class="content-header">
+          <h2 class="content-title">Rezyume</h2>
+          <div class="content-header__line" aria-hidden="true"></div>
+        </header>
+
+        <!-- Timeline: Education & Experience -->
+        <div class="timeline-container">
+          
+          <!-- Education Timeline -->
+          <section class="timeline">
+            <div class="timeline__header">
+              <div class="timeline__icon-box" aria-hidden="true">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="timeline__title">Ta'lim</h3>
+            </div>
+            <ol class="timeline__list">
+              <li class="timeline__item scroll-reveal">
+                <h4 class="timeline__item-title">Toshkent Axborot Texnologiyalari Universiteti</h4>
+                <span class="timeline__item-date">2014 - 2018</span>
+                <p class="timeline__item-text">Kompyuter injiniringi yo'nalishi bo'yicha bakalavr darajasi. Tizimlar tahlili va algoritmlash asoslari o'rganilgan.</p>
+              </li>
+              <li class="timeline__item scroll-reveal">
+                <h4 class="timeline__item-title">EPAM Systems Academy</h4>
+                <span class="timeline__item-date">2019</span>
+                <p class="timeline__item-text">Front-End React Dasturlash bo'yicha 6 oylik intensiv va amaliy ta'lim kursi. Loyihalar ustida guruhda ishlash ko'nikmalari.</p>
+              </li>
+              <li class="timeline__item scroll-reveal">
+                <h4 class="timeline__item-title">Google Professional UX Design Certificate</h4>
+                <span class="timeline__item-date">2021</span>
+                <p class="timeline__item-text">Coursera platformasida foydalanuvchilar interfeysini loyihalash va interfaol prototiplar yaratish bo'yicha 7 ta kursdan iborat sertifikat dasturi.</p>
+              </li>
+            </ol>
+          </section>
+
+          <!-- Experience Timeline -->
+          <section class="timeline">
+            <div class="timeline__header">
+              <div class="timeline__icon-box" aria-hidden="true">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+              <h3 class="timeline__title">Tajriba</h3>
+            </div>
+            <ol class="timeline__list">
+              <li class="timeline__item scroll-reveal">
+                <h4 class="timeline__item-title">Senior Frontend Engineer — Super Dispatch</h4>
+                <span class="timeline__item-date">2022 - Hozirgacha</span>
+                <p class="timeline__item-text">React, Next.js va TypeScript yordamida yirik AQSh logistika platformasining frontend qismini loyihalash va optimallashtirish. Lighthouse tezligini 60% dan 90%+ gacha ko'tarish.</p>
+              </li>
+              <li class="timeline__item scroll-reveal">
+                <h4 class="timeline__item-title">Frontend Developer — Payme</h4>
+                <span class="timeline__item-date">2020 - 2022</span>
+                <p class="timeline__item-text">To'lov tizimining veb va mobil-web shaxsiy kabinetlarini ishlab chiqish. To'lov interfeyslarining yuklanish tezligini va qulayligini yaxshilash.</p>
+              </li>
+              <li class="timeline__item scroll-reveal">
+                <h4 class="timeline__item-title">Mentor & Frontend Developer — Najot Ta'lim</h4>
+                <span class="timeline__item-date">2018 - 2020</span>
+                <p class="timeline__item-text">Markazning ichki ERP tizimi ustida ishlash. Shuningdek, 100 dan ortiq shogirdlarga JavaScript, HTML/CSS va React bo'yicha mentorlik qilish.</p>
+              </li>
+            </ol>
+          </section>
+
+        </div>
+
+        <!-- Skills Progress Bars -->
+        <section class="skills">
+          <h3 class="section-title">Ko'nikmalarim</h3>
+          
+          <ul class="skills__list">
+            <li class="skills__item">
+              <div class="skills__info">
+                <span class="skills__name">HTML & CSS (SASS, Tailwind CSS)</span>
+                <span class="skills__percent" data-target-value="95">0%</span>
+              </div>
+              <div class="skills__progress-bg" aria-hidden="true">
+                <div class="skills__progress-bar" style="width: 0%;"></div>
+              </div>
+            </li>
+
+            <li class="skills__item">
+              <div class="skills__info">
+                <span class="skills__name">JavaScript & TypeScript (ES6+)</span>
+                <span class="skills__percent" data-target-value="90">0%</span>
+              </div>
+              <div class="skills__progress-bg" aria-hidden="true">
+                <div class="skills__progress-bar" style="width: 0%;"></div>
+              </div>
+            </li>
+
+            <li class="skills__item">
+              <div class="skills__info">
+                <span class="skills__name">React.js & Next.js</span>
+                <span class="skills__percent" data-target-value="88">0%</span>
+              </div>
+              <div class="skills__progress-bg" aria-hidden="true">
+                <div class="skills__progress-bar" style="width: 0%;"></div>
+              </div>
+            </li>
+
+            <li class="skills__item">
+              <div class="skills__info">
+                <span class="skills__name">Figma & UI/UX Design</span>
+                <span class="skills__percent" data-target-value="80">0%</span>
+              </div>
+              <div class="skills__progress-bg" aria-hidden="true">
+                <div class="skills__progress-bar" style="width: 0%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- CV Download -->
+        <section class="resume-download scroll-reveal">
+          <a href="#" class="btn btn--primary" aria-label="Rezyumeni yuklab olish PDF formatda" onclick="alert('Rezyume fayli hozircha yuklanmadi. Namunaviy portfolioda bu faqat demonstratsiya.'); return false;">
+            <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            <span>Rezyumeni yuklab olish (PDF)</span>
+          </a>
+        </section>
+      </article>
+
+
+      <!-- C) PORTFOLIO -->
+      <article class="content-section" id="portfolio" data-page="portfolio">
+        <header class="content-header">
+          <h2 class="content-title">Portfolio</h2>
+          <div class="content-header__line" aria-hidden="true"></div>
+        </header>
+
+        <!-- Filter Buttons (Desktop & Tablet) -->
+        <ul class="portfolio__filter-list" data-filter-list>
+          <li class="portfolio__filter-item">
+            <button class="portfolio__filter-btn active" data-filter-btn="all">Hammasi</button>
+          </li>
+          <li class="portfolio__filter-item">
+            <button class="portfolio__filter-btn" data-filter-btn="web">Veb-saytlar</button>
+          </li>
+          <li class="portfolio__filter-item">
+            <button class="portfolio__filter-btn" data-filter-btn="design">UI/UX Dizayn</button>
+          </li>
+          <li class="portfolio__filter-item">
+            <button class="portfolio__filter-btn" data-filter-btn="mobile">Mobil Ilovalar</button>
+          </li>
+        </ul>
+
+        <!-- Filter Dropdown (Mobile) -->
+        <div class="portfolio__filter-select-box" data-select-box>
+          <button class="portfolio__filter-select" data-select-btn>
+            <span data-select-value>Kategoriyani tanlang</span>
+            <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <ul class="portfolio__select-list">
+            <li class="portfolio__select-item">
+              <button data-select-option="all">Hammasi</button>
+            </li>
+            <li class="portfolio__select-item">
+              <button data-select-option="web">Veb-saytlar</button>
+            </li>
+            <li class="portfolio__select-item">
+              <button data-select-option="design">UI/UX Dizayn</button>
+            </li>
+            <li class="portfolio__select-item">
+              <button data-select-option="mobile">Mobil Ilovalar</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Project Grid -->
+        <ul class="portfolio__grid" data-portfolio-grid>
+          
+          <!-- Project 1 -->
+          <li class="portfolio__project-item scroll-reveal" data-category="web">
+            <a href="#" class="portfolio__project-link" onclick="return false;">
+              <figure class="portfolio__project-img">
+                <div class="portfolio__project-placeholder" style="background: linear-gradient(135deg, #1e1e1f, #2b2b2c);">
+                  <ion-icon name="cart-outline" class="project-icon-placeholder"></ion-icon>
+                </div>
+                <div class="portfolio__project-hover">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </div>
+              </figure>
+              <div class="portfolio__project-info">
+                <h4 class="portfolio__project-title">E-Tijorat Platformasi</h4>
+                <p class="portfolio__project-cat">Veb-saytlar</p>
+                <p class="portfolio__project-desc">Zamonaviy onlayn do'kon, Next.js, Tailwind CSS va Stripe to'lov integratsiyasi.</p>
+                <div class="portfolio__project-tags">
+                  <span>Next.js</span>
+                  <span>Tailwind</span>
+                  <span>Node.js</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Project 2 -->
+          <li class="portfolio__project-item scroll-reveal" data-category="design">
+            <a href="#" class="portfolio__project-link" onclick="return false;">
+              <figure class="portfolio__project-img">
+                <div class="portfolio__project-placeholder" style="background: linear-gradient(135deg, #2b2b2c, #1a1a1b);">
+                  <ion-icon name="grid-outline" class="project-icon-placeholder"></ion-icon>
+                </div>
+                <div class="portfolio__project-hover">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </div>
+              </figure>
+              <div class="portfolio__project-info">
+                <h4 class="portfolio__project-title">Smart Home Dashboard</h4>
+                <p class="portfolio__project-cat">UI/UX Dizayn</p>
+                <p class="portfolio__project-desc">Aqlli uy boshqaruv paneli uchun Figma-da ishlangan premium va interfaol dizayn.</p>
+                <div class="portfolio__project-tags">
+                  <span>Figma</span>
+                  <span>UI/UX</span>
+                  <span>Glassmorphism</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Project 3 -->
+          <li class="portfolio__project-item scroll-reveal" data-category="mobile">
+            <a href="#" class="portfolio__project-link" onclick="return false;">
+              <figure class="portfolio__project-img">
+                <div class="portfolio__project-placeholder" style="background: linear-gradient(135deg, #1f2421, #212529);">
+                  <ion-icon name="fitness-outline" class="project-icon-placeholder"></ion-icon>
+                </div>
+                <div class="portfolio__project-hover">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </div>
+              </figure>
+              <div class="portfolio__project-info">
+                <h4 class="portfolio__project-title">FitLife App</h4>
+                <p class="portfolio__project-cat">Mobil Ilovalar</p>
+                <p class="portfolio__project-desc">Mashg'ulotlar va to'g'ri ovqatlanishni kuzatish uchun PWA mobil ilovasi.</p>
+                <div class="portfolio__project-tags">
+                  <span>React</span>
+                  <span>PWA</span>
+                  <span>Ionic</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Project 4 -->
+          <li class="portfolio__project-item scroll-reveal" data-category="web">
+            <a href="#" class="portfolio__project-link" onclick="return false;">
+              <figure class="portfolio__project-img">
+                <div class="portfolio__project-placeholder" style="background: linear-gradient(135deg, #370617, #6a040f);">
+                  <ion-icon name="medical-outline" class="project-icon-placeholder"></ion-icon>
+                </div>
+                <div class="portfolio__project-hover">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </div>
+              </figure>
+              <div class="portfolio__project-info">
+                <h4 class="portfolio__project-title">Med-Consult Landing</h4>
+                <p class="portfolio__project-cat">Veb-saytlar</p>
+                <p class="portfolio__project-desc">Shifokorlar bilan onlayn konsultatsiya o'tkazish uchun yengil va optimallashgan landing.</p>
+                <div class="portfolio__project-tags">
+                  <span>HTML5</span>
+                  <span>SCSS</span>
+                  <span>JS</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Project 5 -->
+          <li class="portfolio__project-item scroll-reveal" data-category="design">
+            <a href="#" class="portfolio__project-link" onclick="return false;">
+              <figure class="portfolio__project-img">
+                <div class="portfolio__project-placeholder" style="background: linear-gradient(135deg, #03045e, #023e8a);">
+                  <ion-icon name="wallet-outline" class="project-icon-placeholder"></ion-icon>
+                </div>
+                <div class="portfolio__project-hover">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </div>
+              </figure>
+              <div class="portfolio__project-info">
+                <h4 class="portfolio__project-title">Crypto Wallet Interface</h4>
+                <p class="portfolio__project-cat">UI/UX Dizayn</p>
+                <p class="portfolio__project-desc">Kriptovalyuta hamyoni uchun mobil ilovaning qorong'u rejimdagi mukammal interfeysi.</p>
+                <div class="portfolio__project-tags">
+                  <span>UI Design</span>
+                  <span>Figma</span>
+                  <span>Dark Mode</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Project 6 -->
+          <li class="portfolio__project-item scroll-reveal" data-category="mobile">
+            <a href="#" class="portfolio__project-link" onclick="return false;">
+              <figure class="portfolio__project-img">
+                <div class="portfolio__project-placeholder" style="background: linear-gradient(135deg, #132a13, #31572c);">
+                  <ion-icon name="bicycle-outline" class="project-icon-placeholder"></ion-icon>
+                </div>
+                <div class="portfolio__project-hover">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </div>
+              </figure>
+              <div class="portfolio__project-info">
+                <h4 class="portfolio__project-title">Delivery Express</h4>
+                <p class="portfolio__project-cat">Mobil Ilovalar</p>
+                <p class="portfolio__project-desc">Kuryerlar uchun buyurtmalarni qabul qilish va xarita orqali yetkazish gibrid ilovasi.</p>
+                <div class="portfolio__project-tags">
+                  <span>React Native</span>
+                  <span>Maps API</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Project 7 -->
+          <li class="portfolio__project-item scroll-reveal" data-category="web">
+            <a href="#" class="portfolio__project-link" onclick="return false;">
+              <figure class="portfolio__project-img">
+                <div class="portfolio__project-placeholder" style="background: linear-gradient(135deg, #1d3557, #457b9d);">
+                  <ion-icon name="school-outline" class="project-icon-placeholder"></ion-icon>
+                </div>
+                <div class="portfolio__project-hover">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </div>
+              </figure>
+              <div class="portfolio__project-info">
+                <h4 class="portfolio__project-title">Ta'lim Platformasi</h4>
+                <p class="portfolio__project-cat">Veb-saytlar</p>
+                <p class="portfolio__project-desc">Video darslar, uy vazifalari va onlayn testlar bilan ishlovchi LMS platformasi.</p>
+                <div class="portfolio__project-tags">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Project 8 -->
+          <li class="portfolio__project-item scroll-reveal" data-category="design">
+            <a href="#" class="portfolio__project-link" onclick="return false;">
+              <figure class="portfolio__project-img">
+                <div class="portfolio__project-placeholder" style="background: linear-gradient(135deg, #5c3d2e, #865439);">
+                  <ion-icon name="airplane-outline" class="project-icon-placeholder"></ion-icon>
+                </div>
+                <div class="portfolio__project-hover">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </div>
+              </figure>
+              <div class="portfolio__project-info">
+                <h4 class="portfolio__project-title">Travel Agency Design</h4>
+                <p class="portfolio__project-cat">UI/UX Dizayn</p>
+                <p class="portfolio__project-desc">Turizm agentligi uchun chiroyli sarlavha suratlari va qidiruv filtrli UI konsepti.</p>
+                <div class="portfolio__project-tags">
+                  <span>Figma</span>
+                  <span>Travel UI</span>
+                  <span>Mobile First</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Project 9 -->
+          <li class="portfolio__project-item scroll-reveal" data-category="web">
+            <a href="#" class="portfolio__project-link" onclick="return false;">
+              <figure class="portfolio__project-img">
+                <div class="portfolio__project-placeholder" style="background: linear-gradient(135deg, #283618, #606c38);">
+                  <ion-icon name="thunderstorm-outline" class="project-icon-placeholder"></ion-icon>
+                </div>
+                <div class="portfolio__project-hover">
+                  <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                </div>
+              </figure>
+              <div class="portfolio__project-info">
+                <h4 class="portfolio__project-title">Weather Tracker</h4>
+                <p class="portfolio__project-cat">Veb-saytlar</p>
+                <p class="portfolio__project-desc">OpenWeatherMap API bilan ishlaydigan va ob-havoni interfaol ko'rsatadigan ilova.</p>
+                <div class="portfolio__project-tags">
+                  <span>JavaScript</span>
+                  <span>API Integration</span>
+                  <span>CSS Glass</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          
+        </ul>
+      </article>
+
+
+      <!-- D) BLOG -->
+      <article class="content-section" id="blog" data-page="blog">
+        <header class="content-header">
+          <h2 class="content-title">Blog</h2>
+          <div class="content-header__line" aria-hidden="true"></div>
+        </header>
+
+        <ul class="blog__grid">
+          
+          <!-- Post 1 -->
+          <li class="blog__post-item scroll-reveal">
+            <a href="#" class="blog__post-link" onclick="return false;">
+              <figure class="blog__post-img">
+                <div class="blog__post-placeholder" style="background: linear-gradient(135deg, #3a0ca3, #7209b7);">
+                  <ion-icon name="newspaper-outline" class="blog-icon-placeholder"></ion-icon>
+                </div>
+              </figure>
+              <div class="blog__post-info">
+                <div class="blog__post-meta">
+                  <span class="blog__post-category">Veb-dasturlash</span>
+                  <span class="blog__post-dot" aria-hidden="true"></span>
+                  <time datetime="2026-06-15" class="blog__post-date">15-Iyun, 2026</time>
+                </div>
+                <h3 class="blog__post-title">Front-end Dasturlashda 2026-yilgi Trendlar</h3>
+                <p class="blog__post-desc">Zamonaviy front-end dasturlashdagi oxirgi tendensiyalar, kutubxonalar va sun'iy intellektning o'rni.</p>
+              </div>
+            </a>
+          </li>
+
+          <!-- Post 2 -->
+          <li class="blog__post-item scroll-reveal">
+            <a href="#" class="blog__post-link" onclick="return false;">
+              <figure class="blog__post-img">
+                <div class="blog__post-placeholder" style="background: linear-gradient(135deg, #0077b6, #0096c7);">
+                  <ion-icon name="layers-outline" class="blog-icon-placeholder"></ion-icon>
+                </div>
+              </figure>
+              <div class="blog__post-info">
+                <div class="blog__post-meta">
+                  <span class="blog__post-category">Dizayn</span>
+                  <span class="blog__post-dot" aria-hidden="true"></span>
+                  <time datetime="2026-05-02" class="blog__post-date">02-May, 2026</time>
+                </div>
+                <h3 class="blog__post-title">CSS Grid va Flexbox: Qaysi birini qachon ishlatish kerak?</h3>
+                <p class="blog__post-desc">Murakkab maketlar uchun Grid, chiziqli layoutlar uchun esa Flexbox-ni to'g'ri tanlash bo'yicha amaliy qo'llanma.</p>
+              </div>
+            </a>
+          </li>
+
+          <!-- Post 3 -->
+          <li class="blog__post-item scroll-reveal">
+            <a href="#" class="blog__post-link" onclick="return false;">
+              <figure class="blog__post-img">
+                <div class="blog__post-placeholder" style="background: linear-gradient(135deg, #d81159, #e5383b);">
+                  <ion-icon name="speedometer-outline" class="blog-icon-placeholder"></ion-icon>
+                </div>
+              </figure>
+              <div class="blog__post-info">
+                <div class="blog__post-meta">
+                  <span class="blog__post-category">Optimallashtirish</span>
+                  <span class="blog__post-dot" aria-hidden="true"></span>
+                  <time datetime="2026-04-18" class="blog__post-date">18-Aprel, 2026</time>
+                </div>
+                <h3 class="blog__post-title">Sayt tezligini 90+ Lighthouse balliga yetkazish</h3>
+                <p class="blog__post-desc">Rasm va JavaScript fayllarini optimallashtirish, keshdan to'g'ri foydalanish sirlari haqida.</p>
+              </div>
+            </a>
+          </li>
+
+          <!-- Post 4 -->
+          <li class="blog__post-item scroll-reveal">
+            <a href="#" class="blog__post-link" onclick="return false;">
+              <figure class="blog__post-img">
+                <div class="blog__post-placeholder" style="background: linear-gradient(135deg, #ffb703, #fb8500);">
+                  <ion-icon name="color-filter-outline" class="blog-icon-placeholder"></ion-icon>
+                </div>
+              </figure>
+              <div class="blog__post-info">
+                <div class="blog__post-meta">
+                  <span class="blog__post-category">Dizayn</span>
+                  <span class="blog__post-dot" aria-hidden="true"></span>
+                  <time datetime="2026-03-10" class="blog__post-date">10-Mart, 2026</time>
+                </div>
+                <h3 class="blog__post-title">UI/UX Dizaynda ranglar psixologiyasining o'rni</h3>
+                <p class="blog__post-desc">Foydalanuvchi diqqatini jalb qilish va saytdagi konversiyalarni oshirishda ranglarning ta'siri.</p>
+              </div>
+            </a>
+          </li>
+
+          <!-- Post 5 -->
+          <li class="blog__post-item scroll-reveal">
+            <a href="#" class="blog__post-link" onclick="return false;">
+              <figure class="blog__post-img">
+                <div class="blog__post-placeholder" style="background: linear-gradient(135deg, #100c08, #2a2015);">
+                  <ion-icon name="code-working-outline" class="blog-icon-placeholder"></ion-icon>
+                </div>
+              </figure>
+              <div class="blog__post-info">
+                <div class="blog__post-meta">
+                  <span class="blog__post-category">JS Dasturlash</span>
+                  <span class="blog__post-dot" aria-hidden="true"></span>
+                  <time datetime="2026-02-22" class="blog__post-date">22-Fevral, 2026</time>
+                </div>
+                <h3 class="blog__post-title">JavaScript-da Asinxron kod bilan ishlash</h3>
+                <p class="blog__post-desc">Promises, Async/Await va xatoliklarni qayta ishlashning eng toza va xavfsiz usullari.</p>
+              </div>
+            </a>
+          </li>
+
+          <!-- Post 6 -->
+          <li class="blog__post-item scroll-reveal">
+            <a href="#" class="blog__post-link" onclick="return false;">
+              <figure class="blog__post-img">
+                <div class="blog__post-placeholder" style="background: linear-gradient(135deg, #3d348b, #7678ed);">
+                  <ion-icon name="trophy-outline" class="blog-icon-placeholder"></ion-icon>
+                </div>
+              </figure>
+              <div class="blog__post-info">
+                <div class="blog__post-meta">
+                  <span class="blog__post-category">Karyera</span>
+                  <span class="blog__post-dot" aria-hidden="true"></span>
+                  <time datetime="2026-01-05" class="blog__post-date">05-Yanvar, 2026</time>
+                </div>
+                <h3 class="blog__post-title">Nima uchun dasturchi shaxsiy portfolioga ega bo'lishi shart?</h3>
+                <p class="blog__post-desc">Shaxsiy brend yaratish, buyurtmachilar bilan ishonchli aloqalar qurish va portfolioning ta'siri.</p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </article>
+
+
+      <!-- E) ALOQA -->
+      <article class="content-section" id="contact" data-page="contact">
+        <header class="content-header">
+          <h2 class="content-title">Aloqa</h2>
+          <div class="content-header__line" aria-hidden="true"></div>
+        </header>
+
+        <!-- Interactive Map -->
+        <section class="contact-map scroll-reveal">
+          <figure class="contact-map__container">
+            <iframe 
+              src="https://maps.google.com/maps?q=Tashkent,Uzbekistan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              width="600" 
+              height="380" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Anvar Rahimovning joylashuvi - Toshkent xaritasi"
+              class="contact-map__iframe">
+            </iframe>
+          </figure>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+          <h3 class="section-title">Xabar yuborish formasi</h3>
+          
+          <form action="#" class="contact-form" data-contact-form>
+            <div class="contact-form__inputs-row">
+              <div class="contact-form__input-wrapper">
+                <input 
+                  type="text" 
+                  name="fullname" 
+                  id="form-name" 
+                  class="contact-form__input" 
+                  placeholder="Ism-familiyangiz" 
+                  required 
+                  data-form-input>
+              </div>
+
+              <div class="contact-form__input-wrapper">
+                <input 
+                  type="email" 
+                  name="email" 
+                  id="form-email" 
+                  class="contact-form__input" 
+                  placeholder="Email manzilingiz" 
+                  required 
+                  data-form-input>
+              </div>
+            </div>
+
+            <div class="contact-form__input-wrapper">
+              <textarea 
+                name="message" 
+                id="form-message" 
+                class="contact-form__input contact-form__textarea" 
+                placeholder="Sizning xabaringiz..." 
+                required 
+                data-form-input></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary contact-form__submit-btn" disabled data-form-btn>
+              <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
+              <span>Xabar yuborish</span>
+            </button>
+          </form>
+        </section>
+      </article>
+
+      <!-- FOOTER -->
+      <footer class="app-footer">
+        <p class="app-footer__text">
+          &copy; 2026 Anvar Rahimov. Barcha huquqlar himoyalangan.
+        </p>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- "Yuqoriga qaytish" Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Yuqoriga qaytish" data-back-to-top>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </button>
+
+  <!-- Ionicons JS CDN -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Script JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
