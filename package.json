@@ -1,0 +1,13 @@
+{
+  "name": "anvar-rahimov-portfolio",
+  "version": "1.0.0",
+  "description": "Anvar Rahimov - Senior Frontend Dasturchi & UI/UX Dizayner Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "Anvar Rahimov",
+  "license": "ISC"
+}
