@@ -3,7 +3,7 @@
 
 Project:    Mukammal Shaxsiy Portfolio (vCard style)
 Version:    1.0.0
-Author:     Anvar Rahimov
+Author:     Sherbek Jumabekov
 Last change: 20-July-2026
 -------------------------------------------------------------------*/
 
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
       );
 
       // Mailto havolasini ochish
-      const mailtoUrl = `mailto:anvar.rahimov@example.com?subject=${subject}&body=${body}`;
+      const mailtoUrl = `mailto:sherbek.jumabekov@example.com?subject=${subject}&body=${body}`;
       
       // Xabarni yuborgandan keyin formani tozalash va tugmani o'chirish
       window.location.href = mailtoUrl;
